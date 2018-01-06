@@ -1,0 +1,7 @@
+<%= form_for @product do |f| %>
+    <%=f.collection_select :category_id, Category.all, :id, :category_name %><br>
+        <%=f.text_field :product_name %><br>
+            <%=f.text_field :product_qty %><br>
+                <%=f.text_field :con_product%><br>
+                    <%=f.submit %>
+                        <% end %>
